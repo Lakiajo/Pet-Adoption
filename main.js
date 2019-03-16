@@ -214,12 +214,10 @@ const pets = [
   const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
     console.log(textToPrint)
-    selectedDiv.innerHTML += textToPrint;
+    selectedDiv.innerHTML = textToPrint;
 };
-const petBuilder = () => {
-  let domString = '';
-};
-const petType = () => {
+
+const petType = (pets) => {
     let domString = '';
     for (let l = 0; l < pets.length; l++){
         domString += `<div class="card">`;
@@ -242,33 +240,31 @@ const buttonClick = (e) => {
     const buttonId = e.target.id;
     const selectedPets = [];
 
-    pets.forEach((pets) => {
-      if(pets.type === buttonId) {
-selectedPets.push(pets);
+    pets.forEach((pet) => {
+      if(pet.type === buttonId) {
+selectedPets.push(pet);
       }
     });
     if(buttonId === 'All') {
-    petBuilder(pets);
+    petType(pets);
     } 
     else{
-      petBuilder(selectedPets);
+      petType(selectedPets);
     }
   };
   
 
 const buttonEvents = () => {
-    document.getElementById('Dog').addEventListener('click', buttonClick);
-    document.getElementById('Cat').addEventListener('click', buttonClick);
-    document.getElementById('Dino').addEventListener('click', buttonClick);
+    document.getElementById('dog').addEventListener('click', buttonClick);
+    document.getElementById('cat').addEventListener('click', buttonClick);
+    document.getElementById('dino').addEventListener('click', buttonClick);
     document.getElementById('All').addEventListener('click', buttonClick);
 };
 
 
 const init = () => {
     buttonEvents();
-    petType();
-    petBuilder();
-    
+    petType(pets);   
 };
 init ();
 
