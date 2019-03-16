@@ -64,3 +64,7 @@ font-size: 15px;
   .button:hover {
       transform: scale(1.1);
   }
+
+  .buttons {
+    text-align: center;
+  }
