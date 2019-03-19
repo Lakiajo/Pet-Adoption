@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(134, 105, 139);
-    font-family: 'Special Elite', cursive;
+    background-color: rgb(88, 24, 69  );
+    font-family: 'Montserrat', sans-serif;
     color: rgb(37, 34, 37);
 }
 #buyAPet {
@@ -23,11 +23,11 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px solid rgb(65, 58, 66);
-    font-family: 'Special Elite', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(37, 34, 37);
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(173, 154, 177);
+    background-color: rgb(148, 88, 111);
   }
 
   .card:hover {
@@ -38,8 +38,13 @@ body {
 
   }
   h1 {
-      text-align: center;
-      text-anchor: end;
+    text-align: start;
+
+    text-anchor: end;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    color: rgb(207, 113, 149);
   }
   
   .card img {
@@ -56,7 +61,7 @@ text-align: center;
 padding: 5px;
 margin: auto; 
 border: 10px;
-background-color:rgb(115, 54, 128);
+background-color:rgb(168, 48, 94);
 border-radius: 5px;
 border: 1px solid rgb(13, 13, 14);
 font-size: 15px;
