@@ -1,28 +1,14 @@
 # Pet-Adoption
-Setup
-Create a repository called pet-adoption and push up a README.md file
-Create a setup branch and push up the usual stuff
-Requirements
-As a user, I want to see a listing of all available pets. Each pet should have a card that has all this data:
-Image
-Name: xxx
-Color: xxx
-Special Skill: xxx
-Type of Pet: xxx
-As a user, I want to see 3 category(type) buttons printed at the top of the page. Each should be a different color. These can be hard-coded.
-I want to be able to click one of the 3 buttons, then only the cards that are in the category(type) should show.
-There should be some way for the user to unfilter the results (ie All Pets button).
-
-
+For this project, I created a listing of available pets that are up for adoption. A user should be able to choose a pet type a return results for a specific pet or choose all based on the button clicked. 
 
 ## Getting Started
-```$ git clone git@github.com:Lakiajo/```
+```$ git clone git@github.com:Lakiajo/Pet-Adoption.git```
 
 ### Prerequisites
 ```$ npm install -g http-server```
 ## Image
 Inline-style:
-![alt text](https://github.com/Lakiajo/ "Screen Grab")
+![alt text](https://github.com/Lakiajo/Pet-Adoption/blob/master/Screen%20Shot%202019-03-19%20at%205.51.12%20PM.png "Screen Grab")
 
 ## Running
 Browse to personal directory
